@@ -1,0 +1,58 @@
+baseURL = 'https://jaushouse.com/'
+languageCode = 'en-us'
+title = 'JausHouse'
+# theme = 'terminal'  # overridden by project-level layouts
+
+[params]
+  author = 'Brandon Jaus'
+  description = 'Software consulting for small businesses. We help you replace spreadsheets, manual processes, and disconnected tools with software that actually works together.'
+  email = 'brandon@jaushouse.com'
+  # Calendly URL — update once your account is set up
+  calendlyURL = 'https://calendly.com/jaushouse/discovery'
+  # Cloudflare Web Analytics — add your token after setup
+  # cfAnalyticsToken = ''
+
+[taxonomies]
+  tag = 'tags'
+  category = 'categories'
+
+[markup]
+  [markup.highlight]
+    style = 'monokai'
+    lineNos = true
+    guessSyntax = true
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[pagination]
+  pagerSize = 10
+
+[menus]
+  [[menus.main]]
+    name = 'Services'
+    url = '/services/'
+    weight = 10
+  [[menus.main]]
+    name = 'How It Works'
+    url = '/how-it-works/'
+    weight = 20
+  [[menus.main]]
+    name = 'About'
+    url = '/about/'
+    weight = 30
+  [[menus.main]]
+    name = 'Blog'
+    url = '/blog/'
+    weight = 40
+  [[menus.main]]
+    name = 'Contact'
+    url = '/contact/'
+    weight = 50
+
+[outputs]
+  home = ['HTML']
+
+[sitemap]
+  changeFreq = 'weekly'
+  priority = 0.5

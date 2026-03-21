@@ -1,0 +1,178 @@
+{{ define "main" }}
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <h1 class="hero-headline">Your Business Runs on Hustle.<br><span class="accent">Let's Make It Run on Software.</span></h1>
+    <p class="hero-sub">I help small businesses replace spreadsheets, manual processes, and disconnected tools with software that actually works together.</p>
+    <div class="hero-cta">
+      <a href="{{ .Site.Params.calendlyURL }}" class="btn btn-primary" target="_blank" rel="noopener">Book a Free Discovery Call</a>
+      <a href="{{ "/services/" | absURL }}" class="btn btn-secondary">See What I Can Help With</a>
+    </div>
+    <div class="hero-terminal">
+      <div class="mini-terminal">
+        <div class="mini-terminal-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <div class="mini-terminal-body">
+          <span class="prompt-symbol">&gt;</span> <span class="typed-text" id="typed-text"></span><span class="cursor-blink">|</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Problems -->
+<section class="problems">
+  <div class="container">
+    <h2 class="section-heading">Sound Familiar?</h2>
+    <div class="problem-grid">
+      <div class="problem-card">
+        <div class="problem-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+        </div>
+        <h3>Still running your business on spreadsheets and sticky notes?</h3>
+        <p>Your data lives in 5 different places. Nothing talks to each other. You're manually copying numbers between apps every day.</p>
+      </div>
+      <div class="problem-card">
+        <div class="problem-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <h3>Spending hours on invoicing, scheduling, and admin?</h3>
+        <p>You started a business to do what you love — not to spend weekends chasing payments and updating calendars.</p>
+      </div>
+      <div class="problem-card">
+        <div class="problem-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <h3>Growing fast but your tools aren't keeping up?</h3>
+        <p>Every new hire means more chaos. You can't scale what lives in someone's head or a shared Google Drive folder.</p>
+      </div>
+      <div class="problem-card">
+        <div class="problem-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        </div>
+        <h3>Heard about AI but don't know where to start?</h3>
+        <p>AI can handle your invoices, emails, and data entry — but only if someone sets it up right for your business.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services Overview -->
+<section class="services-overview">
+  <div class="container">
+    <h2 class="section-heading">How I Can Help</h2>
+    <div class="services-grid">
+      <a href="{{ "/services/" | absURL }}" class="service-card">
+        <div class="service-number mono">01</div>
+        <h3>Operations & Software Setup</h3>
+        <p>Get the right tools in place — configured, connected, and working together so your team wastes zero time on busywork.</p>
+      </a>
+      <a href="{{ "/services/" | absURL }}#automation" class="service-card">
+        <div class="service-number mono">02</div>
+        <h3>Process Automation</h3>
+        <p>Automate invoicing, scheduling, approvals, reporting, and the hundred other things you're still doing by hand.</p>
+      </a>
+      <a href="{{ "/services/" | absURL }}#ai" class="service-card">
+        <div class="service-number mono">03</div>
+        <h3>AI & Smart Automation</h3>
+        <p>Put AI to work on document processing, email handling, data extraction, and customer communications.</p>
+      </a>
+      <a href="{{ "/services/" | absURL }}#support" class="service-card">
+        <div class="service-number mono">04</div>
+        <h3>Ongoing Support</h3>
+        <p>Monthly retainer for maintenance, optimization, training, and new automations as your business evolves.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- How It Works Preview -->
+<section class="process-preview">
+  <div class="container">
+    <h2 class="section-heading">How It Works</h2>
+    <div class="process-steps">
+      <div class="step">
+        <div class="step-number mono">1</div>
+        <div class="step-pipe"></div>
+        <h3>Discover</h3>
+        <p>Free 30-minute call. Tell me what's not working — I'll tell you what's possible.</p>
+      </div>
+      <div class="step">
+        <div class="step-number mono">2</div>
+        <div class="step-pipe"></div>
+        <h3>Build</h3>
+        <p>I map your processes, find the waste, and build the solution in phases.</p>
+      </div>
+      <div class="step">
+        <div class="step-number mono">3</div>
+        <div class="step-pipe"></div>
+        <h3>Support</h3>
+        <p>Ongoing optimization and support as your business grows and needs change.</p>
+      </div>
+    </div>
+    <div class="process-cta">
+      <a href="{{ "/how-it-works/" | absURL }}" class="btn btn-secondary">Learn More About the Process</a>
+    </div>
+  </div>
+</section>
+
+<!-- About Teaser -->
+<section class="about-teaser">
+  <div class="container">
+    <div class="about-teaser-content">
+      <h2>Built by an Engineer, Not a Salesperson</h2>
+      <p>I've spent my career building software systems — from APIs and data pipelines to infrastructure and automation. Now I use that experience to help small businesses get the same kind of tooling that big companies take for granted.</p>
+      <p>No jargon. No upsells. Just practical solutions that work.</p>
+      <a href="{{ "/about/" | absURL }}" class="btn btn-secondary">More About My Approach</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Banner -->
+<section class="cta-banner">
+  <div class="container">
+    <h2>Let's talk about what's slowing your business down.</h2>
+    <p>Book a free 30-minute discovery call. No pitch — just a conversation about what's possible.</p>
+    <a href="{{ .Site.Params.calendlyURL }}" class="btn btn-primary" target="_blank" rel="noopener">Book Your Free Call</a>
+  </div>
+</section>
+
+<script>
+(function() {
+  const lines = [
+    'jaus audit --find-waste',
+    'jaus automate --invoicing --scheduling',
+    'jaus connect --quickbooks --crm --email',
+    'jaus deploy --confidence'
+  ];
+  const el = document.getElementById('typed-text');
+  if (!el) return;
+  let lineIdx = 0, charIdx = 0, deleting = false;
+  function tick() {
+    const line = lines[lineIdx];
+    if (!deleting) {
+      el.textContent = line.slice(0, ++charIdx);
+      if (charIdx === line.length) {
+        deleting = true;
+        setTimeout(tick, 2000);
+        return;
+      }
+      setTimeout(tick, 60 + Math.random() * 40);
+    } else {
+      el.textContent = line.slice(0, --charIdx);
+      if (charIdx === 0) {
+        deleting = false;
+        lineIdx = (lineIdx + 1) % lines.length;
+        setTimeout(tick, 400);
+        return;
+      }
+      setTimeout(tick, 30);
+    }
+  }
+  setTimeout(tick, 800);
+})();
+</script>
+{{ end }}

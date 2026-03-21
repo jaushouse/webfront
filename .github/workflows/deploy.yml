@@ -1,9 +1,8 @@
-name: Deploy Portfolio
+name: Deploy
 
 on:
   push:
     branches: [main]
-    paths: [sites/portfolio/**]
 
 jobs:
   deploy:
@@ -13,8 +12,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: 'latest'
+          extended: true
+
+      - run: hugo --minify
+
       - uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy sites/portfolio --project-name jaushouse --branch main
+          command: pages deploy public --project-name jaushouse --branch main

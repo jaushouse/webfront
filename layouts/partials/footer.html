@@ -1,0 +1,38 @@
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <span class="logo-prompt">&gt;</span><span class="logo-text">JausHouse</span>
+      <p class="footer-tagline">Software consulting for small businesses.</p>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="{{ "/services/" | absURL }}">Operations & Software</a></li>
+          <li><a href="{{ "/services/" | absURL }}#automation">Process Automation</a></li>
+          <li><a href="{{ "/services/" | absURL }}#ai">AI & Smart Automation</a></li>
+          <li><a href="{{ "/services/" | absURL }}#support">Ongoing Support</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="{{ "/about/" | absURL }}">About</a></li>
+          <li><a href="{{ "/how-it-works/" | absURL }}">How It Works</a></li>
+          <li><a href="{{ "/blog/" | absURL }}">Blog</a></li>
+          <li><a href="{{ "/contact/" | absURL }}">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Get in Touch</h4>
+        <ul>
+          <li><a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></li>
+          <li><a href="{{ .Site.Params.calendlyURL }}" target="_blank" rel="noopener">Book a Discovery Call</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; {{ now.Year }} JausHouse. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
