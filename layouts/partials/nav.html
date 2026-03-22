@@ -1,7 +1,7 @@
 <header class="site-header">
   <nav class="nav-container">
-    <a href="{{ "/" | absURL }}" class="logo" aria-label="JausHouse Home">
-      <span class="logo-prompt">&gt;</span><span class="logo-text">JausHouse</span>
+    <a href="{{ "/" | relURL }}" class="logo" aria-label="JausHouse Home">
+      <span class="logo-prompt">&gt;</span><span class="logo-text">JausHouse</span> <span class="logo-label">Consulting</span>
     </a>
     <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
       <span></span>
@@ -10,7 +10,7 @@
     </button>
     <ul class="nav-links">
       {{ range .Site.Menus.main }}
-      <li><a href="{{ .URL | absURL }}" class="nav-link{{ if $.IsMenuCurrent "main" . }} active{{ end }}">{{ .Name }}</a></li>
+      <li><a href="{{ .URL | relURL }}" class="nav-link{{ if $.IsMenuCurrent "main" . }} active{{ end }}">{{ .Name }}</a></li>
       {{ end }}
       <li><a href="{{ .Site.Params.calendlyURL }}" class="nav-link nav-cta" target="_blank" rel="noopener">Book a Call</a></li>
     </ul>

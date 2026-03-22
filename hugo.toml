@@ -1,7 +1,6 @@
 baseURL = 'https://jaushouse.com/'
 languageCode = 'en-us'
 title = 'JausHouse'
-# theme = 'terminal'  # overridden by project-level layouts
 
 [params]
   author = 'Brandon Jaus'
@@ -34,7 +33,7 @@ title = 'JausHouse'
     url = '/services/'
     weight = 10
   [[menus.main]]
-    name = 'How It Works'
+    name = 'Process'
     url = '/how-it-works/'
     weight = 20
   [[menus.main]]

@@ -2,11 +2,11 @@
 <!-- Hero -->
 <section class="hero">
   <div class="container">
-    <h1 class="hero-headline">Your Business Runs on Hustle.<br><span class="accent">Let's Make It Run on Software.</span></h1>
-    <p class="hero-sub">I help small businesses replace spreadsheets, manual processes, and disconnected tools with software that actually works together.</p>
+    <h1 class="hero-headline">Your Business Works Hard.<br><span class="accent">Your Software Should Too.</span></h1>
+    <p class="hero-sub">Small businesses deserve software that works as hard as they do. We help make that happen.</p>
     <div class="hero-cta">
       <a href="{{ .Site.Params.calendlyURL }}" class="btn btn-primary" target="_blank" rel="noopener">Book a Free Discovery Call</a>
-      <a href="{{ "/services/" | absURL }}" class="btn btn-secondary">See What I Can Help With</a>
+      <a href="{{ "/services/" | relURL }}" class="btn btn-secondary">See How We Help</a>
     </div>
     <div class="hero-terminal">
       <div class="mini-terminal">
@@ -47,7 +47,7 @@
           <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
         </div>
         <h3>Growing fast but your tools aren't keeping up?</h3>
-        <p>Every new hire means more chaos. You can't scale what lives in someone's head or a shared Google Drive folder.</p>
+        <p>Every new hire means more chaos. You can't scale what lives in someone's head or a shared drive folder.</p>
       </div>
       <div class="problem-card">
         <div class="problem-icon">
@@ -63,27 +63,27 @@
 <!-- Services Overview -->
 <section class="services-overview">
   <div class="container">
-    <h2 class="section-heading">How I Can Help</h2>
+    <h2 class="section-heading">How We Can Help</h2>
     <div class="services-grid">
-      <a href="{{ "/services/" | absURL }}" class="service-card">
+      <a href="{{ "/services/" | relURL }}#operations" class="service-card">
         <div class="service-number mono">01</div>
         <h3>Operations & Software Setup</h3>
         <p>Get the right tools in place — configured, connected, and working together so your team wastes zero time on busywork.</p>
       </a>
-      <a href="{{ "/services/" | absURL }}#automation" class="service-card">
+      <a href="{{ "/services/" | relURL }}#data" class="service-card">
         <div class="service-number mono">02</div>
-        <h3>Process Automation</h3>
-        <p>Automate invoicing, scheduling, approvals, reporting, and the hundred other things you're still doing by hand.</p>
+        <h3>Data Pipelines & Reporting</h3>
+        <p>Connect your systems, digitize what's still on paper, and turn scattered data into reports you can actually use.</p>
       </a>
-      <a href="{{ "/services/" | absURL }}#ai" class="service-card">
+      <a href="{{ "/services/" | relURL }}#ai" class="service-card">
         <div class="service-number mono">03</div>
-        <h3>AI & Smart Automation</h3>
-        <p>Put AI to work on document processing, email handling, data extraction, and customer communications.</p>
+        <h3>AI-Powered Efficiency</h3>
+        <p>Put AI to work on document processing, email handling, data entry, and customer communications.</p>
       </a>
-      <a href="{{ "/services/" | absURL }}#support" class="service-card">
+      <a href="{{ "/services/" | relURL }}#support" class="service-card">
         <div class="service-number mono">04</div>
-        <h3>Ongoing Support</h3>
-        <p>Monthly retainer for maintenance, optimization, training, and new automations as your business evolves.</p>
+        <h3>Maintenance & Administration</h3>
+        <p>Ongoing support to keep your systems healthy, your team trained, and your integrations running smoothly.</p>
       </a>
     </div>
   </div>
@@ -92,29 +92,31 @@
 <!-- How It Works Preview -->
 <section class="process-preview">
   <div class="container">
-    <h2 class="section-heading">How It Works</h2>
+    <h2 class="section-heading">Our Process</h2>
     <div class="process-steps">
       <div class="step">
         <div class="step-number mono">1</div>
-        <div class="step-pipe"></div>
         <h3>Discover</h3>
-        <p>Free 30-minute call. Tell me what's not working — I'll tell you what's possible.</p>
+        <p>Free 30-minute call. Tell us what's not working — we'll tell you what's possible.</p>
       </div>
       <div class="step">
         <div class="step-number mono">2</div>
-        <div class="step-pipe"></div>
-        <h3>Build</h3>
-        <p>I map your processes, find the waste, and build the solution in phases.</p>
+        <h3>Plan</h3>
+        <p>We map your processes, find the waste, and put together a clear proposal.</p>
       </div>
       <div class="step">
         <div class="step-number mono">3</div>
-        <div class="step-pipe"></div>
+        <h3>Build</h3>
+        <p>We implement in phases so you see results early and your team is trained along the way.</p>
+      </div>
+      <div class="step">
+        <div class="step-number mono">4</div>
         <h3>Support</h3>
         <p>Ongoing optimization and support as your business grows and needs change.</p>
       </div>
     </div>
     <div class="process-cta">
-      <a href="{{ "/how-it-works/" | absURL }}" class="btn btn-secondary">Learn More About the Process</a>
+      <a href="{{ "/how-it-works/" | relURL }}" class="btn btn-secondary">Learn More About Our Process</a>
     </div>
   </div>
 </section>
@@ -123,10 +125,9 @@
 <section class="about-teaser">
   <div class="container">
     <div class="about-teaser-content">
-      <h2>Built by an Engineer, Not a Salesperson</h2>
-      <p>I've spent my career building software systems — from APIs and data pipelines to infrastructure and automation. Now I use that experience to help small businesses get the same kind of tooling that big companies take for granted.</p>
-      <p>No jargon. No upsells. Just practical solutions that work.</p>
-      <a href="{{ "/about/" | absURL }}" class="btn btn-secondary">More About My Approach</a>
+      <h2>Software Should Work For You, Not The Other Way Around.</h2>
+      <p>We're a software consultancy built on a simple idea — small businesses shouldn't have to fight their own tools. We bring real engineering experience to help you simplify your operations and get back to the work you actually care about.</p>
+      <a href="{{ "/about/" | relURL }}" class="btn btn-secondary">Who We Are</a>
     </div>
   </div>
 </section>
@@ -145,7 +146,7 @@
   const lines = [
     'jaus audit --find-waste',
     'jaus automate --invoicing --scheduling',
-    'jaus connect --quickbooks --crm --email',
+    'jaus connect --systems --data --reports',
     'jaus deploy --confidence'
   ];
   const el = document.getElementById('typed-text');

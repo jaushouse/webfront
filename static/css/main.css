@@ -122,6 +122,13 @@ img {
   color: var(--white);
 }
 
+.logo-label {
+  color: var(--text-dim);
+  font-weight: 400;
+  font-size: 14px;
+  margin-left: 2px;
+}
+
 .nav-links {
   display: flex;
   align-items: center;
@@ -537,7 +544,7 @@ img {
 }
 
 .page-header {
-  margin-bottom: 48px;
+  margin-bottom: 24px;
 }
 
 .page-header h1 {
@@ -551,6 +558,30 @@ img {
   font-size: 1.15rem;
   color: var(--text-dim);
   line-height: 1.6;
+}
+
+.page-bullets {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 12px 0 0 0;
+}
+
+.page-bullets li {
+  color: var(--text-dim);
+  font-size: 1.15rem;
+  line-height: 1.8;
+  padding-left: 24px;
+  position: relative;
+}
+
+.page-bullets li::before {
+  content: '>';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 1.15rem;
 }
 
 /* Page content — rich text styling */
@@ -636,7 +667,7 @@ img {
    ======================================== */
 
 .service-section {
-  padding: 48px 0;
+  padding: 32px 0;
   border-bottom: 1px solid var(--border);
 }
 
@@ -647,15 +678,15 @@ img {
 .service-section h2 {
   font-size: 1.5rem;
   color: var(--white);
-  margin-bottom: 8px;
+  margin: 4px 0 8px;
 }
 
 .service-section .service-label {
   font-family: var(--font-mono);
-  font-size: 13px;
+  font-size: 16px;
   color: var(--accent);
   font-weight: 700;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   letter-spacing: 0.5px;
 }
 
@@ -761,12 +792,38 @@ img {
   margin-top: 32px;
 }
 
+.contact-section {
+  margin-bottom: 32px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
+
 .contact-form label {
   display: block;
   color: var(--text-dim);
   font-size: 14px;
   font-weight: 500;
   margin-bottom: 6px;
+}
+
+.contact-form {
+  margin-top: 24px;
 }
 
 .contact-form input,
@@ -799,7 +856,6 @@ img {
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   padding: 32px;
-  margin-bottom: 24px;
 }
 
 .contact-info-card h3 {
@@ -814,14 +870,7 @@ img {
 
 /* Calendly embed container */
 .calendly-embed {
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
-  padding: 32px;
-  min-height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-top: 24px;
 }
 
 .calendly-placeholder {
@@ -946,20 +995,6 @@ img {
   margin-bottom: 40px;
 }
 
-.footer-brand .logo-prompt,
-.footer-brand .logo-text {
-  font-family: var(--font-mono);
-  font-size: 20px;
-  font-weight: 700;
-}
-
-.footer-brand .logo-prompt {
-  color: var(--accent);
-}
-
-.footer-brand .logo-text {
-  color: var(--white);
-}
 
 .footer-tagline {
   color: var(--text-dim);
