@@ -647,7 +647,7 @@ img {
   color: var(--text);
 }
 
-.page-content a {
+.page-content a:not(.btn) {
   color: var(--accent);
   text-decoration: underline;
   text-underline-offset: 2px;
