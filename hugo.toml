@@ -6,8 +6,8 @@ title = 'JausHouse'
   author = 'Brandon Jaus'
   description = 'Software consulting for small businesses. We help you replace spreadsheets, manual processes, and disconnected tools with software that actually works together.'
   email = 'brandon@jaushouse.com'
-  # Calendly URL — update once your account is set up
-  calendlyURL = 'https://calendly.com/jaushouse/discovery'
+  # Cal.com booking URL
+  calURL = 'https://cal.com/jaushouse/discovery'
   # Cloudflare Web Analytics — add your token after setup
   # cfAnalyticsToken = ''
 

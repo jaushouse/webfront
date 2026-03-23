@@ -84,5 +84,5 @@ Your business doesn't stand still, and your systems shouldn't either. As your ne
 <div class="cta-banner" style="margin-top: 64px; padding: 48px 0; border-radius: var(--radius-lg);">
   <h2>Ready to start?</h2>
   <p>The first step is a free 30-minute discovery call. Let's figure out what's possible.</p>
-  <a href="https://calendly.com/jaushouse/discovery" class="btn btn-primary" target="_blank" rel="noopener">Book Your Free Discovery Call</a>
+  <a href="https://cal.com/jaushouse/discovery" class="btn btn-primary" target="_blank" rel="noopener">Book Your Free Discovery Call</a>
 </div>

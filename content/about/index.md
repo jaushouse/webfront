@@ -26,5 +26,5 @@ We also prefer long-term relationships over one-off projects. The best work happ
 <div class="cta-banner" style="margin-top: 48px; padding: 48px 0; border-radius: var(--radius-lg);">
   <h2>Want to see if we're a good fit?</h2>
   <p>Book a free 30-minute discovery call. No pitch — just a conversation about what's possible.</p>
-  <a href="https://calendly.com/jaushouse/discovery" class="btn btn-primary" target="_blank" rel="noopener">Book a Free Discovery Call</a>
+  <a href="https://cal.com/jaushouse/discovery" class="btn btn-primary" target="_blank" rel="noopener">Book a Free Discovery Call</a>
 </div>

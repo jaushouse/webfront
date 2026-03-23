@@ -160,5 +160,5 @@ We provide ongoing support so you're never stuck. Whether it's a quick fix, a ne
 <div class="cta-banner" style="margin-top: 48px; padding: 48px 0; border-radius: var(--radius-lg);">
   <h2>Not sure what you need?</h2>
   <p>That's what the discovery call is for. Tell me what's not working — I'll tell you what's possible.</p>
-  <a href="https://calendly.com/jaushouse/discovery" class="btn btn-primary" target="_blank" rel="noopener">Book a Free Discovery Call</a>
+  <a href="https://cal.com/jaushouse/discovery" class="btn btn-primary" target="_blank" rel="noopener">Book a Free Discovery Call</a>
 </div>

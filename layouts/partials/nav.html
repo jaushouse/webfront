@@ -12,7 +12,7 @@
       {{ range .Site.Menus.main }}
       <li><a href="{{ .URL | relURL }}" class="nav-link{{ if $.IsMenuCurrent "main" . }} active{{ end }}">{{ .Name }}</a></li>
       {{ end }}
-      <li><a href="{{ .Site.Params.calendlyURL }}" class="nav-link nav-cta" target="_blank" rel="noopener">Book a Call</a></li>
+      <li><a href="{{ .Site.Params.calURL }}" class="nav-link nav-cta" target="_blank" rel="noopener">Book a Call</a></li>
     </ul>
   </nav>
 </header>
