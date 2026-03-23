@@ -25,7 +25,7 @@ title = 'JausHouse'
       unsafe = true
 
 [pagination]
-  pagerSize = 10
+  pagerSize = 100
 
 [menus]
   [[menus.main]]

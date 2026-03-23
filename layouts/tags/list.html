@@ -3,25 +3,15 @@
   <div class="container container-narrow">
     <header class="page-header">
       <h1>{{ .Title }}</h1>
-      <p class="page-subtitle">Practical advice on software, automation, and running a better business.</p>
+      <p class="page-subtitle">Posts tagged with "{{ .Title | lower }}"</p>
     </header>
-    {{ $allTags := slice }}
-    {{ range .Pages }}
-      {{ with .Params.tags }}
-        {{ range . }}
-          {{ $allTags = $allTags | append . }}
-        {{ end }}
-      {{ end }}
-    {{ end }}
-    {{ $uniqueTags := $allTags | uniq | sort }}
-    {{ if $uniqueTags }}
     <div class="tag-filters">
-      <a href="{{ "/blog/" | relURL }}" class="tag-filter active">All</a>
-      {{ range $uniqueTags }}
-      <a href="{{ "/tags/" | relURL }}{{ . | urlize }}/" class="tag-filter">{{ . }}</a>
+      <a href="{{ "/blog/" | relURL }}" class="tag-filter">All</a>
+      {{ range .Site.Taxonomies.tags }}
+      {{ $name := .Page.Title }}
+      <a href="{{ .Page.Permalink }}" class="tag-filter{{ if eq (lower $name) (lower $.Title) }} active{{ end }}">{{ $name }}</a>
       {{ end }}
     </div>
-    {{ end }}
     <div class="post-list">
       {{ range .Pages }}
       <article class="post-entry">
