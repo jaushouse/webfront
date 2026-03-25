@@ -233,11 +233,15 @@ img {
 }
 
 .hero-headline {
-  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-size: clamp(1.6rem, 5vw, 3.5rem);
   font-weight: 700;
   line-height: 1.2;
   color: var(--white);
   margin-bottom: 24px;
+}
+
+.hero-line {
+  white-space: nowrap;
 }
 
 .hero-headline .accent {
@@ -251,6 +255,7 @@ img {
   margin: 0 auto 40px;
   line-height: 1.7;
 }
+
 
 .hero-cta {
   display: flex;
@@ -300,6 +305,16 @@ img {
   min-height: 60px;
   display: flex;
   align-items: center;
+  white-space: nowrap;
+}
+
+@media (max-width: 580px) {
+  .mini-terminal-body {
+    white-space: normal;
+    word-break: break-all;
+    min-height: 80px;
+    align-items: flex-start;
+  }
 }
 
 .prompt-symbol {
@@ -960,6 +975,7 @@ img {
   text-decoration: none;
   border: 1px solid var(--border);
   transition: all 0.15s;
+  text-transform: lowercase;
 }
 
 .tag-filter:hover {
@@ -1163,9 +1179,6 @@ img {
     text-align: center;
   }
 
-  .hero-headline {
-    font-size: 1.75rem;
-  }
 
   .section-heading {
     font-size: 1.5rem;

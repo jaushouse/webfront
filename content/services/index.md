@@ -10,7 +10,7 @@ layout: "single"
 ---
 
 <div class="service-section" id="operations">
-  <div class="service-label">01 — OPERATIONS</div>
+  <div class="service-label">OPERATIONS</div>
 
 ## Operations & Software Setup
 
@@ -47,7 +47,7 @@ We help you get there. Whether it's connecting the tools you already use, replac
 </div>
 
 <div class="service-section" id="data">
-  <div class="service-label">02 — DATA & INTEGRATIONS</div>
+  <div class="service-label">INTEGRATIONS</div>
 
 ## Data Pipelines & Reporting
 
@@ -84,7 +84,7 @@ We build the connections that make your data reliable and useful — digitizing 
 </div>
 
 <div class="service-section" id="ai">
-  <div class="service-label">03 — AI</div>
+  <div class="service-label">INTELLIGENCE</div>
 
 ## AI-Powered Efficiency
 
@@ -121,7 +121,7 @@ We help you put AI to work on the tasks that eat up your team's time — process
 </div>
 
 <div class="service-section" id="support">
-  <div class="service-label">04 — SUPPORT</div>
+  <div class="service-label">SUPPORT</div>
 
 ## Maintenance & Administration
 

@@ -2,7 +2,7 @@
 <!-- Hero -->
 <section class="hero">
   <div class="container">
-    <h1 class="hero-headline">Your Business Works Hard.<br><span class="accent">Your Software Should Too.</span></h1>
+    <h1 class="hero-headline"><span class="hero-line">Your Business Works Hard.</span><br><span class="hero-line accent">Your Software Should Too.</span></h1>
     <p class="hero-sub">Small businesses deserve software that works as hard as they do. We help make that happen.</p>
     <div class="hero-cta">
       <a href="{{ .Site.Params.calURL }}" class="btn btn-primary" target="_blank" rel="noopener">Book a Free Discovery Call</a>
@@ -66,22 +66,22 @@
     <h2 class="section-heading">How We Can Help</h2>
     <div class="services-grid">
       <a href="{{ "/services/" | relURL }}#operations" class="service-card">
-        <div class="service-number mono">01</div>
+        <div class="service-number mono">OPERATIONS</div>
         <h3>Operations & Software Setup</h3>
         <p>Get the right tools in place — configured, connected, and working together so your team wastes zero time on busywork.</p>
       </a>
       <a href="{{ "/services/" | relURL }}#data" class="service-card">
-        <div class="service-number mono">02</div>
+        <div class="service-number mono">INTEGRATIONS</div>
         <h3>Data Pipelines & Reporting</h3>
         <p>Connect your systems, digitize what's still on paper, and turn scattered data into reports you can actually use.</p>
       </a>
       <a href="{{ "/services/" | relURL }}#ai" class="service-card">
-        <div class="service-number mono">03</div>
+        <div class="service-number mono">INTELLIGENCE</div>
         <h3>AI-Powered Efficiency</h3>
         <p>Put AI to work on document processing, email handling, data entry, and customer communications.</p>
       </a>
       <a href="{{ "/services/" | relURL }}#support" class="service-card">
-        <div class="service-number mono">04</div>
+        <div class="service-number mono">SUPPORT</div>
         <h3>Maintenance & Administration</h3>
         <p>Ongoing support to keep your systems healthy, your team trained, and your integrations running smoothly.</p>
       </a>
@@ -144,14 +144,21 @@
 <script>
 (function() {
   const lines = [
-    'jaus audit --find-waste',
-    'jaus automate --invoicing --scheduling',
-    'jaus connect --systems --data --reports',
-    'jaus deploy --confidence'
+    'jh audit --find-waste',
+    'jh automate --invoicing --scheduling',
+    'jh connect --systems --data --reports',
+    'jh deploy --confidence',
+    'jh sync --accounting --crm --email',
+    'jh report --revenue --weekly',
+    'jh onboard --new-hire --checklist',
+    'jh migrate --spreadsheets --to-software',
+    'jh monitor --uptime --integrations',
+    'jh optimize --workflows --remove-waste'
   ];
   const el = document.getElementById('typed-text');
   if (!el) return;
-  let lineIdx = 0, charIdx = 0, deleting = false;
+  let lineIdx = Math.floor(Math.random() * lines.length);
+  let charIdx = 0, deleting = false;
   function tick() {
     const line = lines[lineIdx];
     if (!deleting) {

@@ -37,12 +37,12 @@ title = 'JausHouse'
     url = '/how-it-works/'
     weight = 20
   [[menus.main]]
-    name = 'About'
-    url = '/about/'
+    name = 'Resources'
+    url = '/resources/'
     weight = 30
   [[menus.main]]
-    name = 'Blog'
-    url = '/blog/'
+    name = 'About'
+    url = '/about/'
     weight = 40
   [[menus.main]]
     name = 'Contact'
