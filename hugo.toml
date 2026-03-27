@@ -34,7 +34,7 @@ title = 'JausHouse'
     weight = 10
   [[menus.main]]
     name = 'Process'
-    url = '/how-it-works/'
+    url = '/process/'
     weight = 20
   [[menus.main]]
     name = 'Resources'

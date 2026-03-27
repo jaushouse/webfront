@@ -32,11 +32,11 @@ Pushes to `main` trigger an automatic build and deploy via GitHub Actions. A wee
 
 ```
 ├── content/
-│   ├── about/            # Who We Are page
-│   ├── contact/          # Get In Touch page + thank you page
-│   ├── how-it-works/     # Process page
-│   ├── resources/        # Blog posts (scheduled weekly)
-│   └── services/         # How We Help page
+│   ├── about/            # About
+│   ├── contact/          # Contact + thank you page
+│   ├── process/          # Process
+│   ├── resources/        # Resources (scheduled weekly)
+│   └── services/         # Services
 ├── functions/
 │   └── api/contact.js    # Contact form serverless function
 ├── layouts/
