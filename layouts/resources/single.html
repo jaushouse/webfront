@@ -1,0 +1,40 @@
+{{ define "main" }}
+<article class="page blog-post">
+  <div class="container container-narrow">
+    <header class="page-header">
+      <div class="post-meta">
+        <time class="post-date mono" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 02, 2006" }}</time>
+        <span class="post-reading-time mono">{{ .ReadingTime }} min read</span>
+      </div>
+      <h1>{{ .Title }}</h1>
+      {{ with .Params.tags }}
+      <div class="post-tags">
+        {{ range . }}<a href="{{ "/tags/" | relURL }}{{ . | urlize }}/" class="tag">{{ . }}</a>{{ end }}
+      </div>
+      {{ end }}
+    </header>
+    <div class="page-content blog-content">
+      {{ .Content }}
+    </div>
+    <footer class="post-footer">
+      <div class="post-nav">
+        {{ with .PrevInSection }}
+        <a href="{{ .Permalink }}" class="post-nav-link">&larr; {{ .Title }}</a>
+        {{ end }}
+        {{ with .NextInSection }}
+        <a href="{{ .Permalink }}" class="post-nav-link">{{ .Title }} &rarr;</a>
+        {{ end }}
+      </div>
+    </footer>
+  </div>
+</article>
+
+<!-- CTA after blog post -->
+<section class="cta-banner">
+  <div class="container">
+    <h2>Need help putting this into practice?</h2>
+    <p>Book a free discovery call and let's talk about your business.</p>
+    <a href="{{ .Site.Params.calURL }}" class="btn btn-primary" target="_blank" rel="noopener">Book Your Free Call</a>
+  </div>
+</section>
+{{ end }}
